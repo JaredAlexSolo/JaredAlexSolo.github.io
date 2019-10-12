@@ -5,19 +5,20 @@
 
 <body>
   <script>
-    var name = prompt("Input a number", "insert any number");
+    name = prompt("Input a number", "insert any number");
     if (name > 1000) {
       document.write("The input number is too big!");
       name = "error";
     }
     while (isNaN(name)) {
       name = prompt("Input a number", "insert any number");
-    }
+    } <
+    !--
     factorials = [];
     var fact = 1;
 
-    <
-    !-- function factorial(name) {
+
+    function factorial(name) {
       for (int i = 2; i < name; i++) {
         for (j = 1; j <= i; j++) {
           fact = fact * j;
