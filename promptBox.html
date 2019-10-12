@@ -4,12 +4,32 @@
 </head>
 
 <body>
+  <p id="demo"></p>
   <script>
     var name = prompt("Input a number", "insert any number");
     while (isNaN(name)) {
-      document.write(name);
+      if (name > 1000) {
+        document.write("The input number is too big!");
+      }
       name = prompt("Input a number", "insert any number");
+
     }
+    factorials = [];
+    var fact = 1;
+
+    function factorial(name) {
+      for (int i = 2; i < name; i++) {
+        for (j = 1; j <= i; j++) {
+          fact = fact * j;
+          factorials[i] = fact;
+        }
+      }
+    }
+
+    if (name > 1000) {
+      document.write("The input number is too big!");
+    }
+    document.getElementById("demo").innerHTML = factorials;
   </script>
 </body>
 
