@@ -7,12 +7,12 @@
   <p id="demo"></p>
   <script>
     var name = prompt("Input a number", "insert any number");
+    if (name > 1000) {
+      document.write("The input number is too big!");
+      name = "error";
+    }
     while (isNaN(name)) {
-      if (name > 1000) {
-        document.write("The input number is too big!");
-      }
       name = prompt("Input a number", "insert any number");
-
     }
     factorials = [];
     var fact = 1;
