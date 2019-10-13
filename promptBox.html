@@ -1,11 +1,13 @@
 <html>
 
 <head>
-  var fact = 1;
+
 </head>
 
 <body>
   <script>
+    var fact = 1;
+    var i;
     name = prompt("Input a number", "insert any number");
     while (isNaN(name)) {
       name = prompt("Input a number", "insert any number");
@@ -13,13 +15,13 @@
     while (!isNaN(name)) {
       if (name > 1000) {
         document.write("The input number is too big!");
-        break;
+        continue;
       }
       document.write(name);
-      for (int i = 2; i < name; i++) {
+      for (i = 2; i < name; i++) {
         fact = fact * i;
+        document.write(fact);
       }
-      document.write(fact);
       break;
     }
   </script>
