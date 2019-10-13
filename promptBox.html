@@ -11,19 +11,19 @@
     name = prompt("Input a number", "insert any number");
     while (isNaN(name)) {
       name = prompt("Input a number", "insert any number");
-      while (!isNaN(name)) {
-        if (name > 1000) {
-          document.write("The input number is too big!");
-        }
-        name = prompt("Input a number", "insert any number");
-        continue;
+    }
+    while (!isNaN(name)) {
+      if (name > 1000) {
+        document.write("The input number is too big!");
       }
-      document.write(name);
-      for (i = 2; i < name; i++) {
-        fact = fact * i;
-        document.write(fact + "<br>");
-      }
-      break;
+      name = prompt("Input a number", "insert any number");
+    }
+    document.write(name);
+    for (i = 2; i < name; i++) {
+      fact = fact * i;
+      document.write(fact + "<br>");
+    }
+    break;
     }
   </script>
 </body>
