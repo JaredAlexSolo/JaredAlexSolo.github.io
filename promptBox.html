@@ -15,6 +15,7 @@
     while (!isNaN(name)) {
       if (name > 1000) {
         document.write("The input number is too big!");
+        name = null;
         continue;
       }
       document.write(name);
