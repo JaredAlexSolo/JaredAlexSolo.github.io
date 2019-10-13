@@ -15,10 +15,9 @@
     while (!isNaN(name)) {
       if (name > 1000) {
         document.write("The input number is too big!" + "<br>");
-      } else {
-        continue;
       }
       var name = parseInt(prompt("Input a number", "html is bullshit"));
+      document.write("wtf");
     }
     for (i = 2; i < name; i++) {
       fact = fact * i;
