@@ -8,6 +8,7 @@
   <script>
     var fact = 1;
     var i;
+    var factorials = [];
     var name = prompt("Input a number", "insert any number");
     while (isNaN(name)) {
       name = prompt("Input a number", "insert any number");
@@ -24,6 +25,7 @@
     }
     for (i = 2; i <= name; i++) {
       fact = fact * i;
+      factorials[i - 2] = fact;
       document.write(fact + "<br>");
     }
   </script>
