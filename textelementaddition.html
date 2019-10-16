@@ -8,17 +8,16 @@
     function calc() {
       var n1 = document.getElementById('n1').value;
       var n2 = document.getElementById('n2').value;
-      var result = 0;
       var operator = document.getElementById('operators').value;
 
       if (operator === "+") {
-        result = parseInt(docucment.getElementById('result').value) = n1 + n2;
+        var n2 = parseInt(docucment.getElementById('result').value) = n1 + n2;
       } else if (operator === "-") {
-        result = parseInt(docucment.getElementById('result').value) = n1 - n2;
+        var n2 = parseInt(docucment.getElementById('result').value) = n1 - n2;
       } else if (operator === "/") {
-        result = parseInt(docucment.getElementById('result').value) = n1 / n2;
+        var n2 = parseInt(docucment.getElementById('result').value) = n1 / n2;
       } else if (operator === "*") {
-        result = parseInt(docucment.getElementById('result').value) = n1 * n2;
+        var n2 = parseInt(docucment.getElementById('result').value) = n1 * n2;
       }
     }
   </script>
@@ -34,7 +33,7 @@
     <option value="/">/</option>
     <option value="*">*</option>
   </select>
-  <button onclick=calc();>=</button>
+  <button onclick="calc();">=</button>
   <input type="text" id="result" />
 
 </body>
