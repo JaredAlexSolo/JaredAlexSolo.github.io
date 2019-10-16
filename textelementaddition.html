@@ -10,13 +10,13 @@
       var operator = document.getElementById('operators').value;
 
       if (operator === "+") {
-        var n2 = docucment.getElementById('result').value = n1 + n2;
+        docucment.getElementById('result').innerHTML = n1 + n2;
       } else if (operator === "-") {
-        var n2 = docucment.getElementById('result').value = n1 - n2;
+        docucment.getElementById('result').innerHTML = n1 - n2;
       } else if (operator === "/") {
-        var n2 = docucment.getElementById('result').value = n1 / n2;
+        docucment.getElementById('result').innerHTML = n1 / n2;
       } else if (operator === "*") {
-        var n2 = docucment.getElementById('result').value = n1 * n2;
+        docucment.getElementById('result').innerHTML = n1 * n2;
       }
     }
   </script>
@@ -34,6 +34,7 @@
   </select>
   <button onclick="calc()">=</button>
   <input type="text" id="result" />
+
 
 </body>
 
