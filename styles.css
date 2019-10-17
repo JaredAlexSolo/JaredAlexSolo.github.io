@@ -1,0 +1,15 @@
+.underline {
+  text-decoration: underline;
+}
+
+.orangeFill {
+  background-color: orange;
+}
+
+.redFont {
+  color:red;
+  font-weight: bold;
+}
+p {
+  width: 400px
+}
