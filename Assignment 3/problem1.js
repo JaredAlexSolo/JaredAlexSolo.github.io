@@ -3,7 +3,6 @@ function loadName() {
   var maxScore=10;
   var names = [];
   var scores = [];
-  var avg;
   var total = 0;
 
   while ( x = window.prompt( "Student's name Cancel to Exit", 0 ) ) {
@@ -13,9 +12,7 @@ function loadName() {
     }while(isNaN(y) || y > 10 || y < 0);
     scores.push(parseInt(y));
   }
-      for (var i=0; i<scores.length; i++) {
-          total += scores[i];
-  }
+  
         document.getElementById('p1').innerHTML = names;
         document.getElementById('p2').innerHTML = scores;
         document.getElementById('p3').innerHTML = names.length +" students received a total score of "+ total+")";
