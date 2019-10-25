@@ -13,20 +13,11 @@ function loadName() {
     }while(isNaN(y) || y > 10 || y < 0);
     scores.push(parseInt(y));
   }
-    var table="<table border='1'>";
-      document.write("<tr>");
-           for (var i=0; i < names.length; i++) {
-           document.write("<td>"+names[i]+"</td>");
-           document.write("<td>"+scores[i]+"</td>");
-       }
-      document.write("</tr>");
       for (var i=0; i<scores.length; i++) {
           total += scores[i];
         }
       document.write(names.length +" students received a total score of "+ total);
-
   document.getElementById('p1').innerHTML = names;
+  document.write("<br />");
   document.getElementById('p2').innerHTML = scores;
-  document.write(table);
-
 }
