@@ -18,4 +18,5 @@ function loadName() {
   }
         document.getElementById('p1').innerHTML = names;
         document.getElementById('p2').innerHTML = scores;
+        document.getElementById('p3').innerHTML = names.length +" students received a total score of "+ total+")";
 }
