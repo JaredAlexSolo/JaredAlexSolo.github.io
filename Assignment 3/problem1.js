@@ -8,7 +8,8 @@ function loadName() {
     "Student's name Cancel to Exit", John))  {
     names.push(studentName);
     studentScores = window.prompt( "Value of x", 0 );
-    scores.push(parseInt(studentScores));
+    studentScores = parseInt(studentScores);
+    scores.push(studentScores);
   }
 
 
