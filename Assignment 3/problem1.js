@@ -6,9 +6,14 @@ function loadName() {
 
   while ( x = window.prompt( "Student's name Cancel to Exit", 0 ) )  {
     names.push(x);
-    y = window.prompt( "Student score(between "+minScore+" and "+maxScore, 0 );
-    scores.push(parseInt(y));
-  }
+
+    do{
+      y = window.prompt( "Student score(between "+minScore+" and "+maxScore+")", 0 );
+    }while(isNaN(y) || y > 10 || y < 0);
+}
+
+
+
   document.getElementById('p1').innerHTML = names;
   document.getElementById('p2').innerHTML = scores;
 }
