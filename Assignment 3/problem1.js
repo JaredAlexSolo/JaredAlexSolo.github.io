@@ -8,5 +8,6 @@ function loadName() {
     y = window.prompt( "Student score(between 0 and 10)", 0 );
     scores.push(y);
   }
-  document.getElementById('paragraph').innerHTML = names;
+  document.getElementById('paragraph').innerHTML = names.toString();
+  document.getElementById('paragraph').innerHTML = scores;
 }
