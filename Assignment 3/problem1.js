@@ -7,11 +7,6 @@ function loadName() {
   while ( studentName = window.prompt("Student's name Cancel to Exit", John))  {
     names.push(studentName);
   }
-  while (studentScores = window.prompt( "Value of x", 0 )){
-  scores.push(studentScores);
-}
-
-
   document.getElementById('name').innerHTML = names;
   document.getElementById('score').innerHTML = scores;
 }
