@@ -15,9 +15,7 @@ function loadName() {
   }
       for (var i=0; i<scores.length; i++) {
           total += scores[i];
-        }
+  }
         document.getElementById('p1').innerHTML = names;
         document.getElementById('p2').innerHTML = scores;
-        document.write(names.length +" students received a total score of "+ total);
-
 }
