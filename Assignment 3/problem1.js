@@ -27,6 +27,6 @@ function loadName() {
 
   document.getElementById('p1').innerHTML = names;
   document.getElementById('p2').innerHTML = scores;
-  document.writeln(table);
+  document.write(table);
 
 }
