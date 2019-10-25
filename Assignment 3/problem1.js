@@ -1,13 +1,11 @@
 function loadName() {
-  var studentScores= 0;
-  
-
+  var x = prompt("Yeet","Yeee");
   var names = [];
   var scores = [];
 
-  while ( studentName = window.prompt("Student's name Cancel to Exit", John))  {
-    names.push(studentName);
+  while ( x = window.prompt( "Value of x", 0 ) )  {
+    document.getElementById('paragraph').innerHTML = "hey";
+    names.push(parseInt(x));
   }
-  document.getElementById('name').innerHTML = names;
-  document.getElementById('score').innerHTML = scores;
+  document.getElementById('paragraph').innerHTML = names;
 }
