@@ -1,6 +1,6 @@
 function loadName() {
-  var studentScores;
-  var studentName;
+  var studentScores= 0;
+  var studentName = "";
   var names = [];
   var scores = [];
 
@@ -8,5 +8,5 @@ function loadName() {
     names.push(studentName);
   }
   document.getElementById('name').innerHTML = names;
-  document.getElementById('score').innerHTML = scores;
+  
 }
