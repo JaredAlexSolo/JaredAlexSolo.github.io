@@ -1,5 +1,4 @@
 function loadName() {
-  var x = prompt("Yeet","Yeee");
   var names = [];
   var scores = [];
 
