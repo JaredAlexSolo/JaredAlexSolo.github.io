@@ -3,18 +3,30 @@ function loadName() {
   var maxScore=10;
   var names = [];
   var scores = [];
+  var avg;
+  var total = 0;
 
   while ( x = window.prompt( "Student's name Cancel to Exit", 0 ) ) {
     names.push(x);
-
     do{
       y = window.prompt( "Student score(between "+minScore+" and "+maxScore+")", 0 );
     }while(isNaN(y) || y > 10 || y < 0);
     scores.push(parseInt(y));
-}
-
-
+  }
+    var table="<table border='1'>";
+      document.write("<tr>");
+           for (var i=0; i < names.length; i++) {
+           document.write("<td>"+names[i]+"</td>");
+           document.write("<td>"+scores[i]+"</td>");
+       }
+      document.write("</tr>");
+      for (var i=0; i<scores.length; i++) {
+          total += scores[i];
+        }
+      document.write(names.length +" students received a total score of "+ total);
 
   document.getElementById('p1').innerHTML = names;
   document.getElementById('p2').innerHTML = scores;
+  document.writeln(table);
+
 }
