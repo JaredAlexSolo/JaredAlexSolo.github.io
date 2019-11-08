@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // alert("Text:" + $("#test1").text());
+                $("#test1").text(function(i, orig){
+                    return orig + " this is a new paragraph"
+                })
+            })
+            $("#btn2").click(function(){
+                alert("HTML:" + $("#test1").html());
+            })
+            $("#btn3").click(function(){
+                // alert("class name:" + $("#span1").attr("class"));
+                // $("#span1").attr("class", "it");
+                 $("#span1").addClass("it");
+            })
+        });
+    </script>
+    <style>
+        .bd{
+            font-weight: bold;
+        }
+        .it{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<p id="test1">  This is a <span class="bd">bold</span> paragraph</p>
+<p id="test2">  This is another
+    <span class="bd" id="span1">bold</span> paragraph</p>
+<button id="btn1">Show text</button>
+<button id="btn2">Show HTML</button>
+<button id="btn3">Show class name</button>
+
+</body>
+</html>

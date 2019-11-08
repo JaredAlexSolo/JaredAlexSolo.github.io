@@ -4,9 +4,11 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
+      $("p").append("Some appended text.");
       $("p").on("click", function() {
-        $("p").hide();
+        $("p").fade(100);
       });
+
     });
   </script>
 </head>

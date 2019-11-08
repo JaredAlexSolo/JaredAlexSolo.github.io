@@ -1,0 +1,32 @@
+<html>
+<head>
+<!--    <script src="js/jquery-3.4.1.slim.min.js"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script></head>
+<body>
+<p id="par1"> this is a paragraph 1</p>
+<p id="par2"> this is a paragraph 2</p>
+<p id="par3"> this is a paragraph 3</p>
+<script>
+
+    $(document).ready(function(){
+        // $("p").click(function(){
+        //     $("#par1").fadeTo(200, 0.1);
+        // });
+        // $("p").dblclick(function(){
+        //     $("p").fadeIn();
+        // });
+        $("p").on({
+            click:function(){
+                $("#par1").slideUp(2000).slideDown(1000).fadeOut(function(){
+                    alert("test");
+                });
+            },
+            dblclick:function(){
+                $("p").fadeIn();
+            }
+        })
+    });
+
+</script>
+</body>
+</html>
